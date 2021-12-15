@@ -1,0 +1,43 @@
+@import "utilities.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+nav {
+  @apply w-full px-4 py-2 bg-white border-b-2 border-solid border-gray-100;
+
+  .nav-container {
+    @apply flex flex-row justify-between;
+
+    img {
+      @apply w-[1.5rem] h-auto;
+    }
+
+    div {
+      @apply flex flex-row items-center w-full;
+
+      .nav-brand {
+        @apply w-[5rem];
+
+        a {
+          font-family: "Secular One", sans-serif;
+        }
+      }
+
+      .nav-links {
+        @apply flex flex-row justify-start items-center w-full gap-x-6;
+      }
+
+      .auth-content {
+        @apply flex flex-row justify-end items-center;
+
+        .user {
+          @apply flex flex-row justify-end gap-x-4;
+        }
+
+        .btn-blue {
+          @include button-bg($white-color, $blue-color);
+        }
+      }
+    }
+  }
+}

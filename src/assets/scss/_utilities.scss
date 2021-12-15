@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600&display=swap");
+
+//tailwind utilities
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+$blue-color: rgb(29, 78, 216);
+$white-color: white;
+
+// mixins
+@mixin button-bg($btn-txt-color, $btn-bg-color) {
+  color: $btn-txt-color;
+  background: $btn-bg-color;
+  border-radius: 0.5rem;
+  @apply shadow-sm border-2 border-solid border-[#e6dede];
+}

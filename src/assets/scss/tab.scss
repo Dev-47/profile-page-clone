@@ -1,0 +1,45 @@
+.tab {
+  @apply flex gap-2;
+}
+
+.tab-controller {
+  .tab-controller-items {
+    @apply flex flex-col justify-center items-start gap-y-1;
+
+    .tab-controller-btn {
+      @apply rounded-3xl text-left w-full;
+    }
+
+    .tab-controller-btn.active {
+      @apply font-bold bg-gray-200;
+    }
+  }
+}
+
+.tab-content {
+  @apply mx-4 p-4 bg-white rounded-3xl shadow-lg w-full min-h-[60vh];
+
+  .tab-view.hide {
+    // animation: hide_tab forwards 1s;
+    @apply hidden;
+  }
+
+  .tab-view.show {
+    // animation: show_tab forwards 1s;
+    @apply block;
+  }
+}
+
+@keyframes show_tab {
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes hide_tab {
+  to {
+    opacity: 0;
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+@import "utilities.scss";
+
+.btn-white {
+  @include button-bg($blue-color, $white-color);
+  @apply mx-1 my-2 font-bold;
+}
+
+.btn-blue {
+  @include button-bg($white-color, $blue-color);
+  @apply mx-1 my-2 font-bold;
+}
+
+.form-group {
+  @apply grid-cols-2;
+}
+
+.label-txt {
+  @apply col-span-1;
+}
+
+.grey-txt {
+  @apply col-span-1;
+}
+
+.input-field {
+  @apply col-span-2;
+}

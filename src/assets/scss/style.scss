@@ -1,0 +1,21 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "utilities.scss";
+
+* {
+  font-family: "Barlow", sans-serif;
+}
+
+main {
+  @apply w-full h-screen bg-slate-50;
+}
+
+.content-layout {
+  @apply px-[5rem] py-[3rem];
+}
+
+button {
+  @apply px-4 py-2 text-center;
+}
